@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply bg-[url(/media/lines.svg)] bg-repeat-x;
+}
+
+body {
+  @apply h-screen font-body text-zinc-900/50;
+}
+
+a,
+button {
+  @apply text-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading text-zinc-900;
+}
+
+h1, h2 {
+  @apply font-bold;
+}
+
+@layer utilities {
+  .container {
+    @apply px-4 md:px-0;
+  }
+}
